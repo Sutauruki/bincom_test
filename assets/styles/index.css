@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #008752; /* INEC Green */
+    --secondary-color: #fff;
+    --accent-color: #2D71B6; /* Blue */
+    --dark-color: #333;
+    --light-color: #f8f8f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.tagline {
+    font-style: italic;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--dark-color);
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.btn {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.btn:hover {
+    background-color: #006b40;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+    
+    .buttons-container {
+        padding: 0 15px;
+    }
+}

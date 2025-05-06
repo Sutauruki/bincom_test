@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INEC results for Delta State</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">INEC</div>
+                <div class="header-text">
+                    <h1>Independent National Electoral Commission</h1>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <main class="container">
+        <h1>Welcome to INEC Delta Results Center</h1>
+        <p class="tagline">What Would You Like to do?</p>
+        
+        <div class="buttons-container">
+            <button class="btn" onclick="navigateTo('polling-units-results.php')">Check a Polling Unit Result</button>
+            <button class="btn" onclick="navigateTo('lga-polling-results.php')">Check a LGA Polling Result</button>
+            <button class="btn" onclick="navigateTo('insert_results.php')">Submit a Polling Unit Result</button>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 INEC Delta State</p>
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>
